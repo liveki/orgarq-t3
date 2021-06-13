@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6,span,strong,p,label {
+  color: #484848;
+}
+
+textarea,input,button {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+.default-border {
+  border-radius: 4px;
+}
+
+.default-box-shadow {
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.default-button {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  width: 182px;
+  height: 38px;
+  margin: 0 12px 0;
+}
+
+.error-button {
+  background-color: #FF6666;
+}
+
+.success-button {
+  background-color: #03A500;
+}
+
+.buttons-container {
+  display: flex;
+}

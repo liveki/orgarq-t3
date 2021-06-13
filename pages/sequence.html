@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/sequence.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <title>Sequência</title>
+</head>
+
+<body>
+  <p>Configure sua sequência de 16 bits:</p>
+
+  <div class="input-group">
+    <label for="tag-bits">Quantos bits para tag?</label>
+    <input class="default-border default-box-shadow" type="number" id="tag-bits" />
+
+
+    <label for="word-bits">Quantos bits para palavra?</label>
+    <input class="default-border default-box-shadow" type="number" id="word-bits" />
+
+    <div class="radio-group">
+      <input onclick="enableLineBits()" checked type="radio" id="direct-memmory" name="mem-type" value="true">
+      <label for="direct-memmory">Mapeamento direto</label>
+    </div>
+
+    <div class="radio-group">
+      <input onclick="disableLineBits()" type="radio" id="associative-memory" name="mem-type" value="false">
+      <label for="associative-memory">Mapeamento associativo</label>
+    </div>
+
+    <label id="label-line-bits" for="line-bits">Quantos bits para linha?</label>
+    <input class="default-border default-box-shadow" type="number" id="line-bits" />
+  </div>
+
+  <div class="buttons-container buttons">
+    <button class="default-border default-button error-button" type="button" onclick="goBack()">
+      VOLTAR
+    </button>
+
+    <button class="default-border default-button success-button" type="button" onclick="saveSequenceBitsConfig()">
+      PRÓXIMO
+    </button>
+  </div>
+
+  <script src="./functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+span {
+  font-size: 24px;
+  margin-top: 187px;
+}
+
+textarea {
+  width: 726px;
+  height: 242px;
+  resize: none;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 16px;
+}
+
+textarea::placeholder {
+  opacity: 0.5;
+}
+
+.buttons {
+  margin-top: 106px;
+}
