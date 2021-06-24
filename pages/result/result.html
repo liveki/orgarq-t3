@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../styles/result.css" />
+  <link rel="stylesheet" href="../../styles/global.css" />
+  <title>Resultado</title>
+</head>
+
+<body>
+  <section class="cache-table">
+    <div class="table-container">
+      <strong id="title"></strong>
+      <table id="cache-table"></table>
+    </div>
+
+    <div id="cache-info"></div>
+  </section>
+
+  <section class="result-table">
+    <table id="table"></table>
+
+    <div class="result-bits">
+      <button type="button" onclick="startCache()">
+        <img src="../../assets/play.svg" alt="Play" />
+      </button>
+
+      <strong id="hits">Hits: 0</strong>
+      <strong id="misses">Misses: 0</strong>
+    </div>
+  </section>
+
+  <script>
+    window.onload = function () {
+      populateTable();
+    };
+  </script>
+
+  <script src="./functions.js"></script>
+</body>
+
+</html>

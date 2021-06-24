@@ -11,7 +11,7 @@ function convertSequence() {
 
   setItem('cache', { sequence: parsedValues });
 
-  window.location = "pages/sequence.html";
+  window.location = "pages/sequence/sequence.html";
 }
 
 function convertHexToBinary(hex) {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../styles/cache.css" />
+  <link rel="stylesheet" href="../../styles/global.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <p>Agora, vamos configurar sua cache:</p>
+
+  <div class="input-group">
+    <label for="cache-line">Quantas linhas?</label>
+    <input class="default-border default-box-shadow" type="number" id="cache-line" />
+
+
+    <label for="cache-words">Quantas palavras por linha?</label>
+    <input class="default-border default-box-shadow" type="number" id="cache-words" />
+  </div>
+
+  <div class="buttons-container buttons">
+    <button class="default-border default-button error-button" type="button" onclick="goBack()">
+      VOLTAR
+    </button>
+
+    <button class="default-border default-button success-button" type="button" onclick="saveCacheConfig()">
+      PRÓXIMO
+    </button>
+  </div>
+
+  <script src="./functions.js"></script>
+</body>
+
+</html>

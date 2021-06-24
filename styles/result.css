@@ -1,0 +1,107 @@
+button {
+  background-color: transparent;
+  display: flex;
+}
+
+tbody {
+  height: 328px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 18px;
+  padding: 7px 28px;
+}
+
+td {
+  text-align: center;
+}
+
+tbody, #cache-table {
+  display: block;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+#title {
+  font-size: 32px;
+}
+
+.cache-table {
+  margin-top: 157px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cache-table .end-byte {
+  color: #00A1D4;
+}
+
+#cache-table {
+  height: 219px;
+  max-width: 1000px;
+  padding: 0;
+}
+
+#cache-table::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+#cache-table::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); 
+  border-radius: 2.5px;
+}
+
+#cache-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#cache-info span {
+  color: #484848;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.result-table, .cache-table {
+  display: flex;
+}
+
+.result-table {
+  margin-top: 147px;
+}
+
+.result-table tbody::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.result-table tbody::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); 
+  border-radius: 2.5px;
+}
+
+.result-table .miss {
+  background-color: #FF6666;
+}
+
+.result-table .hit {
+  background-color: #03A500;
+}
+
+.result-bits {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.result-bits #hits {
+  margin-top: 94px;
+  color: #03A500;
+}
+
+.result-bits #misses {
+  color: #FF6666;
+}

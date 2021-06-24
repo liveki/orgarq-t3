@@ -1,5 +1,5 @@
 function goBack() {
-  window.location = "../index.html"
+  window.location = "../../index.html"
 }
 
 function disableLineBits() {
@@ -29,11 +29,6 @@ function saveSequenceBitsConfig() {
   const isDirectMapping = radioInputEl.checked;
   const lineBits = Number(lineInputEl.value);
 
-  console.log('tagBits', tagBits);
-  console.log('wordBits', wordBits);
-  console.log('isDirectMemmory', isDirectMapping);
-  console.log('lineBits', lineBits);
-
   const data = getItem('cache');
 
   setItem('cache', {
@@ -42,9 +37,11 @@ function saveSequenceBitsConfig() {
       tagBits,
       wordBits,
       isDirectMapping,
-      lineBits: lineBits || null,
+      lineBits: lineBits || 4,
     }
   });
+
+  window.location = "../cache/cache.html";
 }
 
 function setItem(key, value) {

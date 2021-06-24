@@ -1,0 +1,38 @@
+p {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 110px 0 58px;
+}
+
+input[type=number] {
+  width: 140px;
+  height: 24px;
+  margin-top: 7px;
+  padding-left: 5px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-top: 30px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group + .radio-group {
+  margin-top: 15px;
+}
+
+.radio-group label {
+  margin: 0 0 0 5px;
+}
+
+.buttons {
+  margin-top: 245px;
+}
